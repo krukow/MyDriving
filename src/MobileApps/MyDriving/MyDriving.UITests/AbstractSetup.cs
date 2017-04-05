@@ -31,6 +31,8 @@ namespace MyDriving.UITests
 			OnAndroid = App.GetType() == typeof(AndroidApp);
 			OniOS = App.GetType() == typeof(iOSApp);
 
+			//SkipTutorial();
+
 			if (App.Query("Login with Facebook").Any())
 			{
 				new LoginPage ()
@@ -48,6 +50,15 @@ namespace MyDriving.UITests
 					App.Tap("Dismiss");
             }
         }
+
+		public void SkipTutorial()
+		{
+			App.SwipeRightToLeft();
+			App.SwipeRightToLeft();
+			App.SwipeRightToLeft();
+			App.SwipeRightToLeft();
+			App.Tap("Let's Go!");
+		}
 
         public void ClearKeychain()
         {

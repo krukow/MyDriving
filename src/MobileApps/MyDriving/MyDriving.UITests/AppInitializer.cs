@@ -37,6 +37,10 @@ namespace MyDriving.UITests
 
 				app = ConfigureApp
 					.Android
+					.KeyStore(Path.Combine(dir, "MyDriving.Android", "Build2016.keystore"),
+					          "Build*1234",
+					          "Build*1234",
+					          "Build2016")
                     .ApkFile(apkPath)
                     .StartApp(Xamarin.UITest.Configuration.AppDataMode.Clear);
 			}

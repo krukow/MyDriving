@@ -248,7 +248,7 @@
       <HintPath>..\..\packages\Xamarin.TestCloud.Agent.0.18.2\lib\Xamarin.iOS10\Calabash.dll</HintPath>
     </Reference>
     <Reference Include="BTProgressHUD">
-      <HintPath>..\..\..\Components\btprogresshud-1.20\lib\ios-unified\BTProgressHUD.dll</HintPath>
+      <HintPath>..\..\Components\btprogresshud-1.20\lib\ios-unified\BTProgressHUD.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

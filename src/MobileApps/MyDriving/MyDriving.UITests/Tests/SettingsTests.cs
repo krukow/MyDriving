@@ -16,7 +16,7 @@ namespace MyDriving.UITests
 		public void ChangeDistanceUnits ()
 		{
             if (OnAndroid)
-            {
+            {				
                 new CurrentTripPage()
                     .NavigateTo("Settings");
             }

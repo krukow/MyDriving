@@ -14,7 +14,9 @@ using MyDriving.Utils;
 using Android.Runtime;
 using System;
 using System.Threading.Tasks;
-using HockeyApp;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 
 namespace MyDriving.Droid
@@ -37,10 +39,8 @@ namespace MyDriving.Droid
         {
             base.OnCreate(bundle);
 
-#if !XTC
-            InitializeHockeyApp();
-#endif
-            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+
+			drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
             //Set hamburger items menu
             SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
@@ -76,44 +76,22 @@ namespace MyDriving.Droid
                 ListItemClicked(Resource.Id.menu_current_trip);
                 SupportActionBar.Title = "Current Trip";
             }
+
+			MobileCenter.Start("11c85741-d4e8-4229-9291-b1c91db24f20",
+				   typeof(Analytics), typeof(Crashes));
         }
 
-        void InitializeHockeyApp()
-        {
-            if (string.IsNullOrWhiteSpace(Logger.HockeyAppAndroid))
-                return;
-
-            HockeyApp.CrashManager.Register(this, Logger.HockeyAppAndroid);
-            HockeyApp.Metrics.MetricsManager.Register(this, Application, Logger.HockeyAppAndroid);
-            HockeyApp.Metrics.MetricsManager.EnableUserMetrics();
-
-            CheckForUpdates();
-
-        }
-
-        void CheckForUpdates()
-        {
-            // Remove this for store builds!
-            UpdateManager.Register(this, Logger.HockeyAppAndroid);
-        }
-
-        void UnregisterManagers()
-        {
-            UpdateManager.Unregister();
-        }
 
         protected override void OnPause()
         {
             base.OnPause();
-
-            UnregisterManagers();
+			            
         }
 
         protected override void OnDestroy()
         {
             base.OnDestroy();
-
-            UnregisterManagers();
+			            
         }
 
 
