@@ -57,19 +57,15 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'XTC|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\XTC</OutputPath>
-    <DefineConstants>XTC</DefineConstants>
     <WarningLevel>4</WarningLevel>
-    <AndroidSupportedAbis>armeabi-v7a;x86;armeabi;arm64-v8a;x86_64</AndroidSupportedAbis>
-    <AndroidFastDeploymentType>
-    </AndroidFastDeploymentType>
-    <AssemblyName>MyDriving.Android</AssemblyName>
-    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <AndroidKeyStore>True</AndroidKeyStore>
-    <AndroidSigningKeyStore>/Users/krukow/code/MyDriving/src/MobileApps/MyDriving/MyDriving.Android/Build2016.keystore</AndroidSigningKeyStore>
-    <AndroidSigningStorePass>Build*1234</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>Build2016</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass>Build*1234</AndroidSigningKeyPass>
+    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi-v7a;armeabi;x86_64;arm64-v8a</AndroidSupportedAbis>
+<AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+<AndroidKeyStore>True</AndroidKeyStore>
+<AndroidSigningKeyStore>/Users/krukow/code/MyDriving/src/MobileApps/MyDriving/MyDriving.Android/Build2016.keystore</AndroidSigningKeyStore>
+<AndroidSigningStorePass>Build*1234</AndroidSigningStorePass>
+<AndroidSigningKeyAlias>Build2016</AndroidSigningKeyAlias>
+<AndroidSigningKeyPass>Build*1234</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HockeySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
