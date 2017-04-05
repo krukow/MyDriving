@@ -57,6 +57,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'XTC|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\XTC</OutputPath>
+    <DefineConstants>XTC;__ANDROID__</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <JavaMaximumHeapSize></JavaMaximumHeapSize>
     <AndroidSupportedAbis>armeabi-v7a;armeabi;x86_64;arm64-v8a</AndroidSupportedAbis>
