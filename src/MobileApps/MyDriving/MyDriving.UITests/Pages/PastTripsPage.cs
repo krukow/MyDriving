@@ -49,9 +49,10 @@ namespace MyDriving.UITests
             }
             if (OniOS)
             {
-                App.ScrollDownTo(PastTripCell(title));
+                //App.ScrollDownTo(PastTripCell(title));
                 App.Screenshot("Selecting past trip: " + title);
-                App.Tap(PastTripCell(title));
+				App.Repl();
+                App.Tap(title);
             }
 		}
 

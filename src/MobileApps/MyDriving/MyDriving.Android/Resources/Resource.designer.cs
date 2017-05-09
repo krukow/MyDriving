@@ -26,11 +26,6 @@ namespace MyDriving.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::PCLCrypto.Resource.String.ApplicationName = global::MyDriving.Droid.Resource.String.ApplicationName;
-			global::PCLCrypto.Resource.String.Hello = global::MyDriving.Droid.Resource.String.Hello;
-			global::PCLStorage.Resource.String.ApplicationName = global::MyDriving.Droid.Resource.String.ApplicationName;
-			global::PCLStorage.Resource.String.Hello = global::MyDriving.Droid.Resource.String.Hello;
-			global::Splat.Resource.String.library_name = global::MyDriving.Droid.Resource.String.library_name;
 			global::Acr.UserDialogs.Resource.Animation.abc_fade_in = global::MyDriving.Droid.Resource.Animation.abc_fade_in;
 			global::Acr.UserDialogs.Resource.Animation.abc_fade_out = global::MyDriving.Droid.Resource.Animation.abc_fade_out;
 			global::Acr.UserDialogs.Resource.Animation.abc_grow_fade_in_from_bottom = global::MyDriving.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -1598,6 +1593,11 @@ namespace MyDriving.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::MyDriving.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::MyDriving.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::MyDriving.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
+			global::PCLCrypto.Resource.String.ApplicationName = global::MyDriving.Droid.Resource.String.ApplicationName;
+			global::PCLCrypto.Resource.String.Hello = global::MyDriving.Droid.Resource.String.Hello;
+			global::PCLStorage.Resource.String.ApplicationName = global::MyDriving.Droid.Resource.String.ApplicationName;
+			global::PCLStorage.Resource.String.Hello = global::MyDriving.Droid.Resource.String.Hello;
+			global::Splat.Resource.String.library_name = global::MyDriving.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Animation
@@ -1760,41 +1760,41 @@ namespace MyDriving.Droid
 			// aapt resource value: 0x7f0100db
 			public const int activityChooserViewStyle = 2130772187;
 			
-			// aapt resource value: 0x7f010165
-			public const int ahBarColor = 2130772325;
+			// aapt resource value: 0x7f010169
+			public const int ahBarColor = 2130772329;
+			
+			// aapt resource value: 0x7f010171
+			public const int ahBarLength = 2130772337;
+			
+			// aapt resource value: 0x7f010170
+			public const int ahBarWidth = 2130772336;
+			
+			// aapt resource value: 0x7f01016e
+			public const int ahCircleColor = 2130772334;
 			
 			// aapt resource value: 0x7f01016d
-			public const int ahBarLength = 2130772333;
+			public const int ahDelayMillis = 2130772333;
 			
-			// aapt resource value: 0x7f01016c
-			public const int ahBarWidth = 2130772332;
+			// aapt resource value: 0x7f01016f
+			public const int ahRadius = 2130772335;
 			
 			// aapt resource value: 0x7f01016a
-			public const int ahCircleColor = 2130772330;
-			
-			// aapt resource value: 0x7f010169
-			public const int ahDelayMillis = 2130772329;
+			public const int ahRimColor = 2130772330;
 			
 			// aapt resource value: 0x7f01016b
-			public const int ahRadius = 2130772331;
+			public const int ahRimWidth = 2130772331;
+			
+			// aapt resource value: 0x7f01016c
+			public const int ahSpinSpeed = 2130772332;
 			
 			// aapt resource value: 0x7f010166
-			public const int ahRimColor = 2130772326;
+			public const int ahText = 2130772326;
 			
 			// aapt resource value: 0x7f010167
-			public const int ahRimWidth = 2130772327;
+			public const int ahTextColor = 2130772327;
 			
 			// aapt resource value: 0x7f010168
-			public const int ahSpinSpeed = 2130772328;
-			
-			// aapt resource value: 0x7f010162
-			public const int ahText = 2130772322;
-			
-			// aapt resource value: 0x7f010163
-			public const int ahTextColor = 2130772323;
-			
-			// aapt resource value: 0x7f010164
-			public const int ahTextSize = 2130772324;
+			public const int ahTextSize = 2130772328;
 			
 			// aapt resource value: 0x7f0100fe
 			public const int alertDialogButtonGroupStyle = 2130772222;
@@ -1928,17 +1928,17 @@ namespace MyDriving.Droid
 			// aapt resource value: 0x7f010013
 			public const int circleCrop = 2130771987;
 			
-			// aapt resource value: 0x7f01016f
-			public const int civ_border_color = 2130772335;
+			// aapt resource value: 0x7f010163
+			public const int civ_border_color = 2130772323;
 			
-			// aapt resource value: 0x7f010170
-			public const int civ_border_overlay = 2130772336;
+			// aapt resource value: 0x7f010164
+			public const int civ_border_overlay = 2130772324;
 			
-			// aapt resource value: 0x7f01016e
-			public const int civ_border_width = 2130772334;
+			// aapt resource value: 0x7f010162
+			public const int civ_border_width = 2130772322;
 			
-			// aapt resource value: 0x7f010171
-			public const int civ_fill_color = 2130772337;
+			// aapt resource value: 0x7f010165
+			public const int civ_fill_color = 2130772325;
 			
 			// aapt resource value: 0x7f010094
 			public const int closeIcon = 2130772116;
@@ -6902,10 +6902,10 @@ namespace MyDriving.Droid
 			
 			public static int[] CircleImageView = new int[]
 			{
-					2130772334,
-					2130772335,
-					2130772336,
-					2130772337};
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325};
 			
 			// aapt resource value: 1
 			public const int CircleImageView_civ_border_color = 1;
@@ -7715,10 +7715,6 @@ namespace MyDriving.Droid
 			
 			public static int[] ProgressWheel = new int[]
 			{
-					2130772322,
-					2130772323,
-					2130772324,
-					2130772325,
 					2130772326,
 					2130772327,
 					2130772328,
@@ -7726,7 +7722,11 @@ namespace MyDriving.Droid
 					2130772330,
 					2130772331,
 					2130772332,
-					2130772333};
+					2130772333,
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337};
 			
 			// aapt resource value: 3
 			public const int ProgressWheel_ahBarColor = 3;
