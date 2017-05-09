@@ -34,16 +34,24 @@ namespace MyDriving.UITests
 
         public CurrentTripPage StartRecordingTrip ()
         {
-            App.Tap (RecordingButton);
+			try {
+				App.Tap(RecordingButton);
+			} catch(Exception) {
+				System.Threading.Thread.Sleep(2500);
+				if (!App.Query(UseSimulatorButton).Any()) {
+					App.Tap(RecordingButton);
+				}
+			}
 
-            System.Threading.Thread.Sleep(2500);
-
-            if (!App.Query(UseSimulatorButton).Any())
-            {
-                App.Tap(RecordingButton);
-            }
-
-            App.Tap(UseSimulatorButton);
+			try
+			{
+				App.WaitForElement(UseSimulatorButton, "", TimeSpan.FromSeconds(30));
+				App.Tap(UseSimulatorButton);
+			}
+			catch (Exception)
+			{
+				//deliberately ignored
+			}
 
             App.Screenshot ("Started recording trip");
 
