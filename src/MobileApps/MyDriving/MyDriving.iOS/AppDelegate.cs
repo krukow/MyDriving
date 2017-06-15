@@ -11,7 +11,9 @@ using MyDriving.iOS.Helpers;
 using MyDriving.Shared;
 using MyDriving.Utils;
 using MyDriving.Utils.Interfaces;
-using HockeyApp;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
 namespace MyDriving.iOS
 {
@@ -33,14 +35,6 @@ namespace MyDriving.iOS
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
             SQLitePCL.CurrentPlatform.Init();
 
-#if !XTC
-            if (!string.IsNullOrWhiteSpace(Logger.HockeyAppiOS))
-            {
-                var manager = BITHockeyManager.SharedHockeyManager;
-                manager.Configure(Logger.HockeyAppiOS);
-                manager.StartManager();
-            }
-#endif
 
             if (!Settings.Current.IsLoggedIn)
             {
@@ -78,6 +72,8 @@ namespace MyDriving.iOS
 #if XTC
             Xamarin.Calabash.Start();
 #endif
+			MobileCenter.Start("bf92343c-82ed-4fd4-9986-179a93be0b1a",
+				   typeof(Analytics), typeof(Crashes));
 
             return true;
         }
