@@ -126,8 +126,8 @@ namespace MyDriving.iOS
     {
         public override void MotionBegan(UIEventSubtype motion, UIEvent evt)
         {
-            if (motion == UIEventSubtype.MotionShake)
-                BITHockeyManager.SharedHockeyManager.FeedbackManager.ShowFeedbackComposeViewWithGeneratedScreenshot();
+            
+                
         }
     }
 }

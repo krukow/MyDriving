@@ -8,6 +8,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using MyDriving.Utils;
 using MyDriving.Utils.Interfaces;
+using Microsoft.Azure.Mobile.Analytics;
 
 namespace MyDriving.Shared
 {
@@ -37,7 +38,7 @@ namespace MyDriving.Shared
 #if __ANDROID__
             HockeyApp.Metrics.MetricsManager.TrackEvent(trackIdentifier);
 #elif __IOS__
-            HockeyApp.BITHockeyManager.SharedHockeyManager?.MetricsManager?.TrackEvent(trackIdentifier);
+            Analytics.TrackEvent(trackIdentifier);
 #elif WINDOWS_UWP
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(trackIdentifier);
 #endif
@@ -50,7 +51,7 @@ namespace MyDriving.Shared
 #if __ANDROID__
             HockeyApp.Metrics.MetricsManager.TrackEvent(trackIdentifier);
 #elif __IOS__
-            HockeyApp.BITHockeyManager.SharedHockeyManager?.MetricsManager?.TrackEvent(trackIdentifier);
+            Analytics.TrackEvent(trackIdentifier);
 #elif WINDOWS_UWP
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent(trackIdentifier);
 #endif

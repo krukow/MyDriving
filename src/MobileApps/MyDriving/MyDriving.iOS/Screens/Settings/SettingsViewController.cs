@@ -8,7 +8,6 @@ using UIKit;
 using MyDriving.Model;
 using MyDriving.ViewModel;
 
-using HockeyApp;
 
 namespace MyDriving.iOS
 {
@@ -77,7 +76,7 @@ namespace MyDriving.iOS
 
 		void LeaveFeedbackButtonClicked(object sender, EventArgs e)
 		{
-			BITHockeyManager.SharedHockeyManager.FeedbackManager.ShowFeedbackComposeView();
+			
 		}
 
         void HandleReloadTableNotification(NSNotification obj)
