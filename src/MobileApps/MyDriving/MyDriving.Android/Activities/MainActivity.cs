@@ -77,8 +77,8 @@ namespace MyDriving.Droid
                 SupportActionBar.Title = "Current Trip";
             }
 
-			MobileCenter.Start("11c85741-d4e8-4229-9291-b1c91db24f20",
-				   typeof(Analytics), typeof(Crashes));
+			MobileCenter.Start("be981a76-9d70-41df-8c17-a126ae607849",
+					   typeof(Analytics), typeof(Crashes));
         }
 
 
