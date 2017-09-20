@@ -86,7 +86,7 @@ namespace MyDriving.iOS
 
                 NSNotificationCenter.DefaultCenter.PostNotificationName("RefreshTripUnits", null);
                 NSNotificationCenter.DefaultCenter.PostNotificationName("RefreshSettingsTable", null);
-                throw new Exception("Unexpected rrror while Selecting Row");
+                throw new Exception("Unexpected error while selecting row");
             }
         }
 
