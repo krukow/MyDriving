@@ -33,6 +33,7 @@ namespace MyDriving.UITests
             { 
                 App.Tap("Distance");
                 App.Tap("Metric (km)");
+                App.WaitForElement("Metric (km)", "Error waiting for switch to Metric", TimeSpan.FromSeconds(15));
                 App.Screenshot("Using Metric Distances");
 
                 App.Tap(SettingsTab);
@@ -52,6 +53,7 @@ namespace MyDriving.UITests
             {
                 App.Tap("Capacity");
                 App.Tap("Metric (liters)");
+                App.WaitForElement("Metric (liters)", "Error waiting for switch to Metric", TimeSpan.FromSeconds(15));
                 App.Screenshot("Using Metric Capacity");
 
                 App.Tap(SettingsTab);

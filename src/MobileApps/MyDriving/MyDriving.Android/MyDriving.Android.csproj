@@ -60,7 +60,7 @@
     <DefineConstants>XTC;__ANDROID__</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <AndroidSupportedAbis>armeabi-v7a;armeabi;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <AndroidSupportedAbis>armeabi-v7a;armeabi;x86_64;arm64-v8a;x86</AndroidSupportedAbis>
 <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
 <AndroidKeyStore>True</AndroidKeyStore>
 <AndroidSigningKeyStore>/Users/krukow/code/MyDriving/src/MobileApps/MyDriving/MyDriving.Android/Build2016.keystore</AndroidSigningKeyStore>
