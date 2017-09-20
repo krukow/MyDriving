@@ -16,7 +16,7 @@ namespace MyDriving.UITests
         public void RecordTripTest()
         {            
             new CurrentTripPage()
-                .NavigateTo("<Current Trip");
+                .NavigateTo("Current Trip");
 
             new CurrentTripPage()
                 .StartRecordingTrip()

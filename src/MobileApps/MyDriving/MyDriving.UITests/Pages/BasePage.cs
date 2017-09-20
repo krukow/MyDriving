@@ -116,7 +116,7 @@ namespace MyDriving.UITests
 
             if (OniOS)
             {
-                _tab = name => x => x.Class("UITabBarButtonLabel").Text(name);
+                _tab = name => x => x.Class("UITabBarButton").Marked(name);
             }
         }
 

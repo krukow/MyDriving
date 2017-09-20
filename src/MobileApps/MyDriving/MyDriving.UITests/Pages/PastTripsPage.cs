@@ -12,7 +12,7 @@ namespace MyDriving.UITests
         readonly Func<string, Query> PastTripCell;
 
         public PastTripsPage()
-            : base (x => x.Marked("Past Trips"), x => x.Class("UINavigationItemView").Marked("Past Trips"))
+            : base (x => x.Marked("Past Trips"), x => x.Marked("Scott - Redmond"))
         {
             if (OniOS)
             {
