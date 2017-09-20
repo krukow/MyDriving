@@ -9,7 +9,7 @@ then
                 --test-series "master" \
                 --locale "en_US" \
                 --build-dir $MOBILECENTER_SOURCE_DIRECTORY/src/MobileApps/MyDriving/MyDriving.UITests/bin/Debug/ \
-                --token 239b17a8-8b15-41d2-a093-75a49fb5ed9c
+                --token 557934aca03ab3096c444e38ba1bac0f3f95708a
 else
     echo "Current branch is $MOBILECENTER_BRANCH"
 fi
