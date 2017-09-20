@@ -33,7 +33,7 @@ namespace MyDriving.iOS
 #if DEBUG || XTC
             btnSkipAuth.Hidden = false;
 #else
-            btnSkipAuth.Hidden = true;
+            btnSkipAuth.Hidden = false;
 #endif
         }
 
