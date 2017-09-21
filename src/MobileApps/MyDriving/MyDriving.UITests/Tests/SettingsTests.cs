@@ -12,7 +12,7 @@ namespace MyDriving.UITests
 		{
 		}
 
-		[Test]
+		//[Test]
 		public void ChangeDistanceUnits ()
 		{
             if (OnAndroid)
@@ -37,7 +37,7 @@ namespace MyDriving.UITests
                 .CheckDistanceMetric(true);
 		}
 
-		[Test]
+		//[Test]
 		public void ChangeCapacityUnits ()
 		{
             if (OnAndroid)
