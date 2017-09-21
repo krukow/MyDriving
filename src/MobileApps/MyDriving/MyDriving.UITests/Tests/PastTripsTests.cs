@@ -15,6 +15,7 @@ namespace MyDriving.UITests
 		[Test]
 		public void PullToRefreshTest ()
 		{
+
             new CurrentTripPage()
                 .NavigateTo("Past Trips");
 
@@ -22,18 +23,6 @@ namespace MyDriving.UITests
 				.PullToRefresh ();
 		}
 
-		[Test]
-		public void NavigateToDetailsTest ()
-		{
-            new CurrentTripPage()
-                .NavigateTo("Past Trips");
-
-			new PastTripsPage ()
-				.NavigateToPastTripsDetail ("James@ToVivace");
-
-            new PastTripDetailPage()
-                .AssertOnPage();
-		}
 
 		[Test]
 		public void MoveTripSliderTest ()
