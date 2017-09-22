@@ -15,7 +15,7 @@ namespace MyDriving.UITests
 		[Test]
 		public void PullToRefreshTest ()
 		{
-                
+
             new CurrentTripPage()
                 .NavigateTo("Past Trips");
 
