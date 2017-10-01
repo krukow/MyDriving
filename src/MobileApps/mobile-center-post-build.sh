@@ -3,7 +3,7 @@ if [ "$MOBILECENTER_BRANCH" == "master" ];
 then
     msbuild /p:Configuration=Debug $MOBILECENTER_SOURCE_DIRECTORY/src/MobileApps/MyDriving/MyDriving.UITests/MyDriving.UITests.csproj
     mobile-center test run uitest \
-                --app "MonkeyFest-Singapore-2017/MyDriving" \
+                --app "GotoCPH-2017/MyDriving-for-iOS" \
                 --devices "MonkeyFest-Singapore-2017/ios-smoketest-devices" \
                 --app-path $MOBILECENTER_OUTPUT_DIRECTORY/MyDrivingiOS.ipa \
                 --test-series "master" \
