@@ -72,7 +72,7 @@ namespace MyDriving.iOS
 #if XTC
             Xamarin.Calabash.Start();
 #endif
-			MobileCenter.Start("be981a76-9d70-41df-8c17-a126ae607849",
+			MobileCenter.Start("868566e1-4937-47d0-ba22-0686c8b961a3",
 				   typeof(Analytics), typeof(Crashes));
 
             return true;
