@@ -49,7 +49,7 @@ namespace MyDriving.UITests
 				app = ConfigureApp
 					.iOS
 					//.AppBundle(appPath)
-                    .InstalledApp("com.microsoft.mydriving")
+                    .InstalledApp("com.microsoft-appcenter.mydriving")
 					.StartApp(Xamarin.UITest.Configuration.AppDataMode.Clear);
 			}
 

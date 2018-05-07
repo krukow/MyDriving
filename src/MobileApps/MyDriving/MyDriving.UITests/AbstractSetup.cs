@@ -73,7 +73,7 @@ namespace MyDriving.UITests
                 if (!App.Query("LoginWithFacebook").Any())
                 {
                     App.TestServer.Post("/keychain", new object());
-                    App = ConfigureApp.iOS.InstalledApp("com.microsoft.mydriving").StartApp();
+                    App = ConfigureApp.iOS.InstalledApp("com.microsoft-appcenter.mydriving").StartApp();
     			}
             }
 		}

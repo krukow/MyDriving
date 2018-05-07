@@ -67,6 +67,7 @@
 <AndroidSigningStorePass>Build*1234</AndroidSigningStorePass>
 <AndroidSigningKeyAlias>Build2016</AndroidSigningKeyAlias>
 <AndroidSigningKeyPass>Build*1234</AndroidSigningKeyPass>
+<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HockeySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
